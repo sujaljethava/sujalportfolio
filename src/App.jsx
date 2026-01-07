@@ -14,6 +14,7 @@ import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import Testimonials from "./pages/Testimonials";
 import Gallery from "./pages/Gallery";
+import ChatFloatingButton from "./components/ChatFloatingButton";
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
+      <ChatFloatingButton />  
     </>
   );
 }
