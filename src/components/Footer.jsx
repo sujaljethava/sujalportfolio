@@ -80,7 +80,7 @@ export default function Footer() {
 
       {/* BOTTOM SMALL BAR */}
       <div className="text-center text-gray-500 text-sm mt-14 pt-6 border-t border-white/10">
-        © {new Date().getFullYear()} Yash Koladiya. All rights reserved.
+        © {new Date().getFullYear()} Sujal Jethava. All rights reserved.
       </div>
     </motion.footer>
   );
