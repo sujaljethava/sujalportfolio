@@ -2,14 +2,16 @@ import { motion } from "framer-motion";
 import {
   FaReact,
   FaNodeJs,
-  FaGitAlt
+  FaGitAlt,
+  FaDatabase
 } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiJavascript,
   SiFramer,
-  SiFirebase
+  SiMongodb
 } from "react-icons/si";
+
 
 
 export default function Home() {
@@ -121,19 +123,20 @@ export default function Home() {
             { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
             { name: "Framer Motion", icon: <SiFramer className="text-pink-400" /> },
             { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-            { name: "Firebase", icon: <SiFirebase className="text-orange-400" /> },
+            { name: "MS SQL Server", icon: <FaDatabase className="text-red-500" /> },
             { name: "Git & GitHub", icon: <FaGitAlt className="text-red-400" /> },
-            { name: "REST APIs", icon: <FaReact className="text-blue-400" /> },
+            { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
           ].map((tech, i) => (
             <motion.div
               key={i}
-              whileHover={{ scale: 1.10, rotateX: 8 }}
+              whileHover={{ scale: 1.1, rotateX: 8 }}
               className="flex flex-col items-center gap-3 bg-white/10 p-5 rounded-xl border border-white/10 shadow-lg"
             >
               <div className="text-4xl">{tech.icon}</div>
               <span className="text-sm font-medium text-gray-200">{tech.name}</span>
             </motion.div>
           ))}
+
 
 
         </div>
