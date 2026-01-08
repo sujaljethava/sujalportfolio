@@ -1,4 +1,29 @@
 import { motion } from "framer-motion";
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaDatabase,
+  FaBug,
+  FaTools,
+  FaGitAlt,
+  FaNodeJs
+} from "react-icons/fa";
+
+import {
+  SiReactrouter,
+  SiMui,
+  SiAntdesign,
+  SiAxios,
+  SiMariadb,
+  SiNodedotjs,
+  SiFrappe,
+  SiJavascript,
+  SiMongodb,
+  SiTailwindcss
+} from "react-icons/si";
+
 
 export default function About() {
   return (
@@ -35,7 +60,7 @@ export default function About() {
       </motion.div>
 
       {/* EXPERIENCE SECTION */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -54,7 +79,41 @@ export default function About() {
             workflow automation, and backend integration.
           </p>
         </div>
+      </motion.div> */}
+      {/* EXPERIENCE SECTION */}
+      <motion.div
+        initial={{ opacity: 0, x: -40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="mt-16"
+      >
+        <h2 className="text-3xl font-bold mb-6">Experience</h2>
+
+        <div className="bg-white/5 p-6 rounded-xl border border-white/10 shadow-lg hover:shadow-2xl transition">
+          <h3 className="text-2xl font-semibold">
+            GalaxyERP Software Pvt. Ltd
+          </h3>
+
+          <p className="text-blue-400 font-medium mt-1">
+            React.js & ERPNext Developer (Dec 2024 – Present)
+          </p>
+
+          <p className="text-gray-300 mt-3 leading-relaxed">
+            Currently working as a React.js & ERPNext Developer, focusing on building
+            scalable, responsive, and visually appealing web applications.
+            I develop modern React components, manage application state,
+            and integrate APIs to deliver smooth and interactive user experiences.
+            <br /><br />
+            In ERPNext, I handle customization such as creating custom doctypes,
+            writing client & server scripts, implementing workflow automation,
+            and optimizing reports. I work closely with teams and clients to
+            translate business requirements into efficient technical solutions
+            while maintaining performance, reliability, and clean code standards.
+          </p>
+        </div>
       </motion.div>
+
 
       {/* EDUCATION SECTION */}
       <motion.div
@@ -74,13 +133,13 @@ export default function About() {
           </div>
           <div className="bg-white/5 p-6 rounded-xl border border-white/10">
             <h3 className="text-xl font-semibold">Mangalm Vidhayalay</h3>
-            <p className="text-gray-400">Std 1 – 12 • Surat, Gujarat</p>
+            <p className="text-gray-400">Std 11 – 12 • Surat, Gujarat</p>
           </div>
         </div>
       </motion.div>
 
       {/* SKILLS SECTION */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -117,7 +176,51 @@ export default function About() {
             </motion.div>
           ))}
         </div>
+      </motion.div> */}
+
+      {/* SKILLS SECTION */}
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="mt-16"
+      >
+        <h2 className="text-3xl font-bold mb-6">Skills</h2>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+
+          {[
+            { name: "HTML5", icon: <FaHtml5 className="text-orange-500" /> },
+            { name: "CSS3", icon: <FaCss3Alt className="text-blue-500" /> },
+            { name: "JavaScript (ES6+)", icon: <FaJs className="text-yellow-400" /> },
+            { name: "React.js", icon: <FaReact className="text-cyan-400" /> },
+            { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+            { name: "MS SQL Server", icon: <FaDatabase className="text-red-500" /> },
+            { name: "Git & GitHub", icon: <FaGitAlt className="text-red-400" /> },
+            { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
+            { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
+            { name: "ERPNext", icon: <SiFrappe className="text-green-500" /> },
+            { name: "MariaDB (SQL)", icon: <SiMariadb className="text-red-500" /> },
+            { name: "Performance Optimization", icon: <FaTools className="text-lime-400" /> },
+
+          ].map((skill, i) => (
+            <motion.div
+              key={i}
+              whileHover={{ scale: 1.08, y: -4 }}
+              transition={{ type: "spring", stiffness: 200 }}
+              className="flex flex-col items-center gap-3 bg-white/10 p-4 rounded-xl border border-white/10 shadow-lg text-center"
+            >
+              <div className="text-3xl">{skill.icon}</div>
+              <span className="text-sm text-gray-200 font-medium">
+                {skill.name}
+              </span>
+            </motion.div>
+          ))}
+
+        </div>
       </motion.div>
+
 
       {/* LANGUAGES */}
       <motion.div

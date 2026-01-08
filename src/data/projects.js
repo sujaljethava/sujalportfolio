@@ -1,5 +1,32 @@
 export const projects = [
   {
+    slug: "etrend-cycle-ecommerce",
+    title: "E‑Trend Cycle (E‑commerce Platform)",
+    timeline: "August 2024 – November 2024",
+    description:
+      "A full‑stack e‑commerce web application built to manage online product sales with user authentication, cart functionality, and an admin management panel.",
+    role: [
+      "Developed frontend UI using React.js with reusable components",
+      "Implemented user authentication including login and session handling",
+      "Built core e‑commerce features such as product listing, cart, and checkout flow",
+      "Created multiple pages including Home, Products, Product Details, Cart, and Profile",
+      "Developed admin panel features for adding, editing, and managing products and users",
+      "Integrated backend APIs using PHP with MySQL database",
+      "Managed database and server environment using XAMPP",
+      "Used multiple third‑party libraries to enhance UI and functionality",
+    ],
+    tech: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "PHP",
+      "MySQL",
+      "XAMPP",
+      "HTML5",
+      "CSS3",
+      "Bootstrap / UI Libraries",
+    ],
+  },
+  {
     slug: "task-manager-galaxy-erp",
     title: "Task Manager (GalaxyERP)",
     timeline: "January 2025 – March 2025",
@@ -70,4 +97,6 @@ export const projects = [
       "MariaDB (SQL Basics)",
     ],
   },
+  
+
 ];

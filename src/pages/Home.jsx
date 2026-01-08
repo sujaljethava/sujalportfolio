@@ -93,7 +93,8 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="mt-20"
+        // className="mt-20"
+        className="mt-20 scroll-mt-40"
       >
         <h3 className="text-3xl font-bold mb-6 text-center">Tech Stack</h3>
 
