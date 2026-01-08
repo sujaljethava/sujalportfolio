@@ -57,12 +57,10 @@ export default function Footer() {
 
           <div className="flex gap-6 mt-4 text-3xl">
             {[
-              { icon: <FaGithub />, url: "#" },
-              { icon: <FaInstagram />, url: "#" },
-              { icon: <FaLinkedin />, url: "#" },
-              { icon: <FaTwitter />, url: "#" },
-              { icon: <FaFacebook />, url: "#" },
-              { icon: <FaEnvelope />, url: "mailto:yourmail@gmail.com" },
+              { icon: <FaGithub />, url: "https://github.com/sujaljethava" },
+              { icon: <FaInstagram />, url: "https://www.instagram.com/sujaljethava.___/" },
+              { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/sujal-jethava-3a0335276/" },
+              { icon: <FaEnvelope />, url: "mailto:sujaljethava13@gmail.com" },
             ].map((item, i) => (
               <motion.a
                 key={i}

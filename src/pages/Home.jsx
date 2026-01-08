@@ -1,4 +1,16 @@
 import { motion } from "framer-motion";
+import {
+  FaReact,
+  FaNodeJs,
+  FaGitAlt
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiJavascript,
+  SiFramer,
+  SiFirebase
+} from "react-icons/si";
+
 
 export default function Home() {
   return (
@@ -59,10 +71,16 @@ export default function Home() {
       >
         <h3 className="text-3xl font-bold mb-4">Short Summary</h3>
         <p className="text-gray-200 leading-relaxed">
-          I enjoy designing interactive user interfaces with a mix of animations,
-          smooth transitions, and attention to detail.  
-          I aim to build products that feel fast, responsive, and visually pleasing.
+          I am a frontend-focused developer who loves transforming ideas into
+          smooth, interactive, and visually engaging web experiences.
+          My work revolves around writing clean, reusable React components,
+          crafting responsive layouts, and enhancing user interfaces with
+          subtle yet meaningful animations.
+          <br /><br />
+          I believe great UI is not just about looks — it’s about performance,
+          accessibility, and how effortlessly users can interact with a product.
         </p>
+
       </motion.section>
 
 
@@ -79,7 +97,7 @@ export default function Home() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
 
-          {[
+          {/* {[
             "React.js",
             "Tailwind CSS",
             "JavaScript",
@@ -96,7 +114,27 @@ export default function Home() {
             >
               {tech}
             </motion.div>
+          ))} */}
+          {[
+            { name: "React.js", icon: <FaReact className="text-cyan-400" /> },
+            { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
+            { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
+            { name: "Framer Motion", icon: <SiFramer className="text-pink-400" /> },
+            { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+            { name: "Firebase", icon: <SiFirebase className="text-orange-400" /> },
+            { name: "Git & GitHub", icon: <FaGitAlt className="text-red-400" /> },
+            { name: "REST APIs", icon: <FaReact className="text-blue-400" /> },
+          ].map((tech, i) => (
+            <motion.div
+              key={i}
+              whileHover={{ scale: 1.10, rotateX: 8 }}
+              className="flex flex-col items-center gap-3 bg-white/10 p-5 rounded-xl border border-white/10 shadow-lg"
+            >
+              <div className="text-4xl">{tech.icon}</div>
+              <span className="text-sm font-medium text-gray-200">{tech.name}</span>
+            </motion.div>
           ))}
+
 
         </div>
       </motion.section>
@@ -111,12 +149,23 @@ export default function Home() {
         className="mt-24 mb-20 bg-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 shadow-2xl"
       >
         <h3 className="text-3xl font-bold mb-4">More About Me</h3>
-        <p className="text-gray-300">
+        {/* <p className="text-gray-300">
           I love working on UI/UX animations, performance optimization, and creating
-          user experiences that feel premium.  
+          user experiences that feel premium.
           I also enjoy collaborating on projects, learning new technologies, and pushing
           the limits of frontend development.
+        </p> */}
+        <p className="text-gray-300 leading-relaxed">
+          I enjoy building interfaces that feel fast, intuitive, and premium.
+          Animations, micro‑interactions, and smooth transitions are areas where
+          I put special focus, as they significantly enhance user experience.
+          <br /><br />
+          Beyond coding, I like exploring new frontend tools, improving UI
+          performance, and learning modern design patterns. I enjoy collaborating
+          with teams, understanding real‑world problems, and turning complex
+          requirements into simple, elegant solutions.
         </p>
+
       </motion.section>
 
     </div>

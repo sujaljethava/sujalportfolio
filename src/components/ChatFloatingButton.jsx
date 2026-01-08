@@ -19,16 +19,14 @@ export default function ChatFloatingButton() {
                 {/* <Link to="/contact">
           <FaComments className="text-3xl" />
         </Link> */}
-                {/* <a
+                <a
                     href="https://wa.me/919601389117"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     <FaComments className="text-3xl" />
-                </a> */}
-                <a href="mailto:sujaljethava13@gmail.com">
-                    <FaComments className="text-3xl" />
                 </a>
+
 
 
             </motion.div>
