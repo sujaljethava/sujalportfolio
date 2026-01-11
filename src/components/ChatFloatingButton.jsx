@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { FaComments } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ChatFloatingButton() {
     return (
@@ -24,7 +23,7 @@ export default function ChatFloatingButton() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <FaComments className="text-3xl" />
+                    <FaWhatsapp className="text-3xl" />
                 </a>
 
 

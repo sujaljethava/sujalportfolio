@@ -3,7 +3,10 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
-  FaDatabase
+  FaDatabase,
+  FaCogs,
+  FaLayerGroup,
+  FaUniversalAccess,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -11,6 +14,7 @@ import {
   SiFramer,
   SiMongodb
 } from "react-icons/si";
+
 
 
 
@@ -64,7 +68,7 @@ export default function Home() {
 
 
       {/* SUMMARY SECTION */}
-      <motion.section
+      {/* <motion.section
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -83,7 +87,92 @@ export default function Home() {
           accessibility, and how effortlessly users can interact with a product.
         </p>
 
-      </motion.section>
+      </motion.section> */}
+
+
+      <section className="mt-24 px-6 max-w-6xl mx-auto text-white">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+
+          {/* LEFT CONTENT */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <p className="text-blue-400 tracking-widest text-sm mb-3">
+              ABOUT ME
+            </p>
+
+            <h2 className="text-4xl font-extrabold leading-tight">
+              Crafting clean, modern <br />
+              <span className="text-blue-400">
+                & meaningful web experiences
+              </span>
+            </h2>
+
+            <p className="mt-5 text-gray-300 leading-relaxed">
+              I’m a frontend‑focused developer who enjoys transforming ideas
+              into smooth, interactive, and visually engaging interfaces.
+              I specialize in writing clean, reusable React components,
+              building responsive layouts, and enhancing UX with subtle
+              animations.
+            </p>
+
+            <p className="mt-4 text-gray-400 leading-relaxed">
+              Along with frontend development, I actively work on
+              <span className="text-white font-medium"> ERPNext customization</span>,
+              automating workflows and adapting systems to real‑world business
+              needs.
+            </p>
+          </motion.div>
+
+          {/* RIGHT CARD */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="bg-gradient-to-br from-white/10 to-white/5 
+                     backdrop-blur-xl rounded-2xl p-8 
+                     border border-white/10 shadow-2xl"
+          >
+            <h3 className="text-2xl font-bold mb-6">
+              What I focus on
+            </h3>
+
+            <ul className="space-y-4">
+              <li className="flex items-start gap-4">
+                <FaReact className="text-cyan-400 text-xl mt-1" />
+                <span className="text-gray-200">
+                  High‑performance React interfaces & reusable components
+                </span>
+              </li>
+
+              <li className="flex items-start gap-4">
+                <FaLayerGroup className="text-blue-400 text-xl mt-1" />
+                <span className="text-gray-200">
+                  Clean UI, scalable layouts & fully responsive design
+                </span>
+              </li>
+
+              <li className="flex items-start gap-4">
+                <FaCogs className="text-green-400 text-xl mt-1" />
+                <span className="text-gray-200">
+                  ERPNext customization, workflows, client & server scripts
+                </span>
+              </li>
+
+              <li className="flex items-start gap-4">
+                <FaUniversalAccess className="text-purple-400 text-xl mt-1" />
+                <span className="text-gray-200">
+                  Accessibility‑friendly design & smooth micro‑interactions
+                </span>
+              </li>
+            </ul>
+          </motion.div>
+        </div>
+      </section>
 
 
       {/* TECH STACK SECTION */}
@@ -99,25 +188,6 @@ export default function Home() {
         <h3 className="text-3xl font-bold mb-6 text-center">Tech Stack</h3>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
-
-          {/* {[
-            "React.js",
-            "Tailwind CSS",
-            "JavaScript",
-            "Framer Motion",
-            "Node.js",
-            "Firebase",
-            "Git & GitHub",
-            "REST APIs",
-          ].map((tech, i) => (
-            <motion.div
-              key={i}
-              whileHover={{ scale: 1.12, rotateX: 5 }}
-              className="bg-white/10 p-4 rounded-xl border border-white/10 shadow-lg"
-            >
-              {tech}
-            </motion.div>
-          ))} */}
           {[
             { name: "React.js", icon: <FaReact className="text-cyan-400" /> },
             { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
